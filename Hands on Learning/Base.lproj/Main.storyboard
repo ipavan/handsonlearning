@@ -1,24 +1,515 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="skN-aR-4Tl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec-Bold.otf">
+            <string>Sailec-Bold</string>
+        </array>
+        <array key="Sailec-Regular.otf">
+            <string>Sailec-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Content Card View Controller-->
+        <scene sceneID="uil-EK-9lM">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="ZGr-Jb-YqB" customClass="ContentCardViewController" customModule="Hands_on_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kSE-EL-mGe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="T3T-q0-ay9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sI0-i6-Fqv"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMj-LL-85V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1995.6521739130437" y="1449.7767857142856"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="wxk-DK-VgO">
+            <objects>
+                <viewController id="cXd-gc-xh3" customClass="UserProfileViewController" customModule="Hands_on_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TgU-qY-PVx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGr-pB-jnW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Working with User Profile Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEL-PJ-APZ">
+                                        <rect key="frame" x="83" y="29" width="248" height="17"/>
+                                        <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrazeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="v2Q-Da-Y6c">
+                                        <rect key="frame" x="8" y="12.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="025-GE-SIJ"/>
+                                            <constraint firstAttribute="height" constant="50" id="P58-dE-1Mt"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="8xQ-gp-fkJ"/>
+                                    <constraint firstItem="yEL-PJ-APZ" firstAttribute="centerY" secondItem="YGr-pB-jnW" secondAttribute="centerY" id="Cbx-gf-wrm"/>
+                                    <constraint firstItem="yEL-PJ-APZ" firstAttribute="centerX" secondItem="YGr-pB-jnW" secondAttribute="centerX" id="MWI-Kp-Waz"/>
+                                    <constraint firstItem="v2Q-Da-Y6c" firstAttribute="centerY" secondItem="YGr-pB-jnW" secondAttribute="centerY" id="Me8-ES-iZj"/>
+                                    <constraint firstItem="v2Q-Da-Y6c" firstAttribute="leading" secondItem="YGr-pB-jnW" secondAttribute="leading" constant="8" id="Vum-7e-6T3"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Coq-sb-0re">
+                                <rect key="frame" x="0.0" y="127" width="414" height="686"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9c-jz-iD6">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1335"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell Braze who you are - set your UserID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3J-Ey-dQC">
+                                                <rect key="frame" x="16" y="32" width="318" height="17"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1cd-DP-lMA">
+                                                <rect key="frame" x="16" y="65" width="382" height="34"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftn-VZ-RUi">
+                                                <rect key="frame" x="16" y="107" width="200" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="lK7-la-W9M"/>
+                                                    <constraint firstAttribute="height" constant="44" id="okh-Vh-dVZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Set User ID">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setUserID:" destination="cXd-gc-xh3" eventType="touchUpInside" id="RFJ-6F-cFY"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attributes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wg-PW-FsE">
+                                                <rect key="frame" x="16" y="183" width="101" height="20"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Bold" family="Sailec" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell Braze what your favorite color is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meq-40-m7O">
+                                                <rect key="frame" x="16" y="211" width="288" height="17"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkF-mz-N8y">
+                                                <rect key="frame" x="16" y="236" width="382" height="34"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib0-Ft-Dmc">
+                                                <rect key="frame" x="16" y="278" width="200" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="KqB-nF-oKJ"/>
+                                                    <constraint firstAttribute="width" constant="200" id="xqv-k5-wJO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Set Attribute">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setColorAttribute:" destination="cXd-gc-xh3" eventType="touchUpInside" id="zo6-29-eIJ"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYU-hq-ush">
+                                                <rect key="frame" x="16" y="354" width="66" height="20"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Bold" family="Sailec" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send a custom event into Braze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOD-VY-5R9">
+                                                <rect key="frame" x="16" y="382" width="255" height="17"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E9A-bg-g1p">
+                                                <rect key="frame" x="16" y="407" width="382" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rle-B4-iDn">
+                                                <rect key="frame" x="16" y="449" width="200" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="Wpe-9B-7vj"/>
+                                                    <constraint firstAttribute="height" constant="44" id="hYv-8U-vmx"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Send Event">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="logCustomEvent:" destination="cXd-gc-xh3" eventType="touchUpInside" id="993-1b-GvB"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Data Immediately to Braze" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAd-E6-0Hp">
+                                                <rect key="frame" x="16" y="525" width="313" height="20"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Bold" family="Sailec" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22t-CF-p9J">
+                                                <rect key="frame" x="16" y="553" width="200" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="64g-vA-TmL"/>
+                                                    <constraint firstAttribute="height" constant="44" id="eOr-kH-wcG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Flush Data">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="flushData:" destination="cXd-gc-xh3" eventType="touchUpInside" id="eU0-AV-pSB"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2X-4c-xq0">
+                                                <rect key="frame" x="16" y="621" width="382" height="10"/>
+                                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="iLh-Le-UWg"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advanced Stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfo-z5-9mw">
+                                                <rect key="frame" x="16" y="655" width="185" height="24"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Bold" family="Sailec" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numeric Attributes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh4-05-Kci">
+                                                <rect key="frame" x="16" y="711" width="188" height="20"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Bold" family="Sailec" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="OQ4-9d-sWk">
+                                                <rect key="frame" x="46" y="776" width="322" height="31"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="cXd-gc-xh3" eventType="valueChanged" id="HER-Wy-Q1A"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boolean Attributes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5V0-g5-vO5">
+                                                <rect key="frame" x="16" y="890" width="186" height="20"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Bold" family="Sailec" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qD-jS-gLd">
+                                                <rect key="frame" x="16" y="926" width="51" height="31"/>
+                                            </switch>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5c-Cd-17t">
+                                                <rect key="frame" x="16" y="814" width="250" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="WHn-FH-jG6"/>
+                                                    <constraint firstAttribute="width" constant="250" id="aSD-Kh-tT8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Send Numeric Attribute">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setNumericAttribute:" destination="cXd-gc-xh3" eventType="touchUpInside" id="mez-u2-1vJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31W-zS-qLd">
+                                                <rect key="frame" x="16" y="973" width="250" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="DGD-BK-Qjb"/>
+                                                    <constraint firstAttribute="width" constant="250" id="WsD-2R-Uzv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Send Boolean Attribute">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setBooleanAttribute:" destination="cXd-gc-xh3" eventType="touchUpInside" id="o2A-io-82w"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchases" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c6-dD-NXi">
+                                                <rect key="frame" x="16" y="1049" width="101" height="20"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Bold" family="Sailec" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf9-QY-BWy">
+                                                <rect key="frame" x="16" y="1243" width="200" height="44"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="2xd-1K-UfW"/>
+                                                    <constraint firstAttribute="width" constant="200" id="y5Z-bh-b2y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Log Purchase"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="logPurchase:" destination="cXd-gc-xh3" eventType="touchUpInside" id="bWr-WZ-Okg"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6I-19-Hnn">
+                                                <rect key="frame" x="16" y="1077" width="65" height="17"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aX3-pp-v0J">
+                                                <rect key="frame" x="16" y="1110" width="382" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCz-7u-I1a">
+                                                <rect key="frame" x="16" y="1160" width="42" height="17"/>
+                                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZw-or-V2C">
+                                                <rect key="frame" x="16" y="1193" width="382" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Value: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ct-cr-zha">
+                                                <rect key="frame" x="16" y="739" width="123" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="KZw-or-V2C" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="0qW-j8-VgK"/>
+                                            <constraint firstItem="zfo-z5-9mw" firstAttribute="top" secondItem="p2X-4c-xq0" secondAttribute="bottom" constant="24" id="1oB-3u-taX"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vYU-hq-ush" secondAttribute="trailing" constant="20" symbolic="YES" id="2FH-JH-q8X"/>
+                                            <constraint firstItem="rle-B4-iDn" firstAttribute="top" secondItem="E9A-bg-g1p" secondAttribute="bottom" constant="8" symbolic="YES" id="32p-O6-zGe"/>
+                                            <constraint firstItem="5V0-g5-vO5" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="35p-HK-IKq"/>
+                                            <constraint firstItem="vYU-hq-ush" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="3wb-dD-5T1"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Wg-PW-FsE" secondAttribute="trailing" constant="20" symbolic="YES" id="4LU-DY-X1Y"/>
+                                            <constraint firstAttribute="trailing" secondItem="KZw-or-V2C" secondAttribute="trailing" constant="16" id="4fB-Yx-4Hb"/>
+                                            <constraint firstItem="lCz-7u-I1a" firstAttribute="top" secondItem="aX3-pp-v0J" secondAttribute="bottom" constant="16" id="5hR-GE-9h3"/>
+                                            <constraint firstItem="Sh4-05-Kci" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="8NC-ga-nmi"/>
+                                            <constraint firstItem="cf9-QY-BWy" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="9rH-Ni-WaZ"/>
+                                            <constraint firstItem="rle-B4-iDn" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="Bkg-dO-ZHL"/>
+                                            <constraint firstItem="y6I-19-Hnn" firstAttribute="top" secondItem="5c6-dD-NXi" secondAttribute="bottom" constant="8" symbolic="YES" id="CNO-nU-aiJ"/>
+                                            <constraint firstItem="5V0-g5-vO5" firstAttribute="top" secondItem="T5c-Cd-17t" secondAttribute="bottom" constant="32" id="CXg-y4-K3t"/>
+                                            <constraint firstItem="KZw-or-V2C" firstAttribute="top" secondItem="lCz-7u-I1a" secondAttribute="bottom" constant="16" id="ChW-Ga-qPI"/>
+                                            <constraint firstItem="T5c-Cd-17t" firstAttribute="top" secondItem="OQ4-9d-sWk" secondAttribute="bottom" constant="8" symbolic="YES" id="E5X-gI-RXs"/>
+                                            <constraint firstAttribute="bottom" secondItem="cf9-QY-BWy" secondAttribute="bottom" constant="48" id="EcM-BH-GbY"/>
+                                            <constraint firstItem="aX3-pp-v0J" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="FgO-Fr-5tG"/>
+                                            <constraint firstItem="AkF-mz-N8y" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="FzH-m4-s44"/>
+                                            <constraint firstItem="OAd-E6-0Hp" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="GHh-nc-Af6"/>
+                                            <constraint firstItem="aX3-pp-v0J" firstAttribute="top" secondItem="y6I-19-Hnn" secondAttribute="bottom" constant="16" id="Hep-50-Azh"/>
+                                            <constraint firstItem="zfo-z5-9mw" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="Hx3-ZD-SwJ"/>
+                                            <constraint firstItem="E9A-bg-g1p" firstAttribute="top" secondItem="KOD-VY-5R9" secondAttribute="bottom" constant="8" symbolic="YES" id="I7K-Bq-rGl"/>
+                                            <constraint firstItem="31W-zS-qLd" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="Ioh-zu-sX1"/>
+                                            <constraint firstItem="5c6-dD-NXi" firstAttribute="top" secondItem="31W-zS-qLd" secondAttribute="bottom" constant="32" id="Jd8-F3-9wd"/>
+                                            <constraint firstItem="Meq-40-m7O" firstAttribute="top" secondItem="7Wg-PW-FsE" secondAttribute="bottom" constant="8" symbolic="YES" id="KNg-PF-lcR"/>
+                                            <constraint firstItem="Meq-40-m7O" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="KyE-3e-UZv"/>
+                                            <constraint firstItem="31W-zS-qLd" firstAttribute="top" secondItem="4qD-jS-gLd" secondAttribute="bottom" constant="16" id="L50-TO-vaS"/>
+                                            <constraint firstItem="E9A-bg-g1p" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="LKD-C6-PrG"/>
+                                            <constraint firstItem="P3J-Ey-dQC" firstAttribute="top" secondItem="K9c-jz-iD6" secondAttribute="top" constant="32" id="MmK-ls-9jZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="E9A-bg-g1p" secondAttribute="trailing" constant="16" id="PUI-fJ-yrp"/>
+                                            <constraint firstItem="7Wg-PW-FsE" firstAttribute="top" secondItem="ftn-VZ-RUi" secondAttribute="bottom" constant="32" id="QOG-Tz-orl"/>
+                                            <constraint firstItem="1cd-DP-lMA" firstAttribute="top" secondItem="P3J-Ey-dQC" secondAttribute="bottom" constant="16" id="QUn-hy-l81"/>
+                                            <constraint firstItem="OQ4-9d-sWk" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="48" id="RH0-Cs-SLB"/>
+                                            <constraint firstAttribute="trailing" secondItem="1cd-DP-lMA" secondAttribute="trailing" constant="16" id="RKF-qU-uw8"/>
+                                            <constraint firstItem="OAd-E6-0Hp" firstAttribute="top" secondItem="rle-B4-iDn" secondAttribute="bottom" constant="32" id="UPF-kF-t06"/>
+                                            <constraint firstItem="4qD-jS-gLd" firstAttribute="top" secondItem="5V0-g5-vO5" secondAttribute="bottom" constant="16" id="Vqn-Jg-b83"/>
+                                            <constraint firstItem="T5c-Cd-17t" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="WL1-V8-fqs"/>
+                                            <constraint firstAttribute="trailing" secondItem="p2X-4c-xq0" secondAttribute="trailing" constant="16" id="Xhc-JP-UG8"/>
+                                            <constraint firstAttribute="trailing" secondItem="aX3-pp-v0J" secondAttribute="trailing" constant="16" id="Ydp-Ub-cue"/>
+                                            <constraint firstItem="KOD-VY-5R9" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="YyK-k5-euq"/>
+                                            <constraint firstAttribute="trailing" secondItem="AkF-mz-N8y" secondAttribute="trailing" constant="16" id="a7E-vH-Crf"/>
+                                            <constraint firstItem="4qD-jS-gLd" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="b2f-eH-aer"/>
+                                            <constraint firstItem="22t-CF-p9J" firstAttribute="top" secondItem="OAd-E6-0Hp" secondAttribute="bottom" constant="8" symbolic="YES" id="bAK-VF-Zrg"/>
+                                            <constraint firstItem="ib0-Ft-Dmc" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="btL-g8-e1P"/>
+                                            <constraint firstItem="5c6-dD-NXi" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="dST-db-EMx"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KOD-VY-5R9" secondAttribute="trailing" constant="20" symbolic="YES" id="dkA-PR-6hZ"/>
+                                            <constraint firstItem="P3J-Ey-dQC" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="e3X-3m-kAT"/>
+                                            <constraint firstItem="4Ct-cr-zha" firstAttribute="top" secondItem="Sh4-05-Kci" secondAttribute="bottom" constant="8" symbolic="YES" id="edh-41-JaC"/>
+                                            <constraint firstItem="y6I-19-Hnn" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="efU-wH-9Y9"/>
+                                            <constraint firstItem="4Ct-cr-zha" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="eiD-DX-7T3"/>
+                                            <constraint firstItem="ftn-VZ-RUi" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="fDG-bz-Vbu"/>
+                                            <constraint firstItem="7Wg-PW-FsE" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="fMt-qJ-b5C"/>
+                                            <constraint firstItem="ib0-Ft-Dmc" firstAttribute="top" secondItem="AkF-mz-N8y" secondAttribute="bottom" constant="8" symbolic="YES" id="g9e-dR-RVa"/>
+                                            <constraint firstItem="cf9-QY-BWy" firstAttribute="top" secondItem="KZw-or-V2C" secondAttribute="bottom" constant="16" id="hPR-aV-hLC"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="P3J-Ey-dQC" secondAttribute="trailing" constant="20" symbolic="YES" id="jLy-SZ-wwa"/>
+                                            <constraint firstItem="p2X-4c-xq0" firstAttribute="top" secondItem="22t-CF-p9J" secondAttribute="bottom" constant="24" id="jjM-yH-1wH"/>
+                                            <constraint firstItem="Sh4-05-Kci" firstAttribute="top" secondItem="zfo-z5-9mw" secondAttribute="bottom" constant="32" id="kV7-Y0-pEc"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Meq-40-m7O" secondAttribute="trailing" constant="20" symbolic="YES" id="lUZ-Pj-wjz"/>
+                                            <constraint firstItem="p2X-4c-xq0" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="lUe-IG-meS"/>
+                                            <constraint firstItem="OQ4-9d-sWk" firstAttribute="top" secondItem="4Ct-cr-zha" secondAttribute="bottom" constant="16" id="nI4-Bb-BcD"/>
+                                            <constraint firstItem="vYU-hq-ush" firstAttribute="top" secondItem="ib0-Ft-Dmc" secondAttribute="bottom" constant="32" id="nct-WQ-czj"/>
+                                            <constraint firstItem="22t-CF-p9J" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="r4U-Tq-mja"/>
+                                            <constraint firstItem="lCz-7u-I1a" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="tV6-FZ-dFV"/>
+                                            <constraint firstItem="5V0-g5-vO5" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="uR1-l5-G9I"/>
+                                            <constraint firstItem="ftn-VZ-RUi" firstAttribute="top" secondItem="1cd-DP-lMA" secondAttribute="bottom" constant="8" symbolic="YES" id="ukz-x8-EP9"/>
+                                            <constraint firstItem="1cd-DP-lMA" firstAttribute="leading" secondItem="K9c-jz-iD6" secondAttribute="leading" constant="16" id="uw5-a8-rSC"/>
+                                            <constraint firstItem="KOD-VY-5R9" firstAttribute="top" secondItem="vYU-hq-ush" secondAttribute="bottom" constant="8" symbolic="YES" id="w8n-U7-R3v"/>
+                                            <constraint firstItem="AkF-mz-N8y" firstAttribute="top" secondItem="Meq-40-m7O" secondAttribute="bottom" constant="8" symbolic="YES" id="xzp-2S-u0n"/>
+                                            <constraint firstAttribute="trailing" secondItem="OQ4-9d-sWk" secondAttribute="trailing" constant="48" id="ywe-cW-3XD"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OAd-E6-0Hp" secondAttribute="trailing" constant="20" symbolic="YES" id="zyl-H8-EdK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="K9c-jz-iD6" firstAttribute="width" secondItem="clv-7R-4IQ" secondAttribute="width" id="Yvy-qk-nAg"/>
+                                    <constraint firstItem="K9c-jz-iD6" firstAttribute="bottom" secondItem="Hv5-VA-yDX" secondAttribute="bottom" id="adR-Br-lVe"/>
+                                    <constraint firstItem="K9c-jz-iD6" firstAttribute="top" secondItem="Hv5-VA-yDX" secondAttribute="top" id="gCe-Y2-usw"/>
+                                    <constraint firstItem="K9c-jz-iD6" firstAttribute="trailing" secondItem="Hv5-VA-yDX" secondAttribute="trailing" id="ily-nM-ULj"/>
+                                    <constraint firstItem="K9c-jz-iD6" firstAttribute="leading" secondItem="Hv5-VA-yDX" secondAttribute="leading" id="sYL-Ne-eCX"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Hv5-VA-yDX"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="clv-7R-4IQ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bAI-pE-PH0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YGr-pB-jnW" firstAttribute="top" secondItem="bAI-pE-PH0" secondAttribute="top" id="0ae-uL-Cxm"/>
+                            <constraint firstItem="Coq-sb-0re" firstAttribute="trailing" secondItem="bAI-pE-PH0" secondAttribute="trailing" id="1wL-al-9H1"/>
+                            <constraint firstItem="Coq-sb-0re" firstAttribute="leading" secondItem="bAI-pE-PH0" secondAttribute="leading" id="48d-8O-vFk"/>
+                            <constraint firstItem="YGr-pB-jnW" firstAttribute="trailing" secondItem="bAI-pE-PH0" secondAttribute="trailing" id="UCf-bq-pdd"/>
+                            <constraint firstItem="Coq-sb-0re" firstAttribute="bottom" secondItem="bAI-pE-PH0" secondAttribute="bottom" id="WZ6-cG-34L"/>
+                            <constraint firstItem="YGr-pB-jnW" firstAttribute="leading" secondItem="bAI-pE-PH0" secondAttribute="leading" id="cRf-Yf-6Pa"/>
+                            <constraint firstItem="Coq-sb-0re" firstAttribute="top" secondItem="YGr-pB-jnW" secondAttribute="bottom" constant="8" symbolic="YES" id="jTG-Jr-mgx"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="TabBar-ProfileIcon" id="n5v-ov-y2t"/>
+                    <connections>
+                        <outlet property="booleanValue" destination="4qD-jS-gLd" id="a6G-KK-IvN"/>
+                        <outlet property="colorAttributeTextField" destination="AkF-mz-N8y" id="Kaa-tR-gAh"/>
+                        <outlet property="eventTextField" destination="E9A-bg-g1p" id="hhC-i5-XR2"/>
+                        <outlet property="productNameTextField" destination="aX3-pp-v0J" id="Uil-2m-ZbT"/>
+                        <outlet property="productPriceTextField" destination="KZw-or-V2C" id="MIC-8x-pxN"/>
+                        <outlet property="scrollView" destination="Coq-sb-0re" id="iAq-o2-jQb"/>
+                        <outlet property="sliderLabel" destination="4Ct-cr-zha" id="ghJ-9l-Beq"/>
+                        <outlet property="userIDLabel" destination="P3J-Ey-dQC" id="CdC-Fi-4ef"/>
+                        <outlet property="userIDTextField" destination="1cd-DP-lMA" id="mfv-4x-mvV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xme-ya-jxv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795.6521739130435" y="644.86607142857144"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Eko-qr-m94">
+            <objects>
+                <tabBarController id="skN-aR-4Tl" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V6d-ul-vH5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cXd-gc-xh3" kind="relationship" relationship="viewControllers" id="dRg-UI-LC5"/>
+                        <segue destination="jbk-Fc-UMp" kind="relationship" relationship="viewControllers" id="Ykr-P6-4Ep"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyV-oh-Wbi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-443" y="1045"/>
+        </scene>
+        <!--Content Cards-->
+        <scene sceneID="7VR-5i-oHl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jbk-Fc-UMp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Content Cards" image="TabBar-CardIcon" id="0iD-9X-blb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oQR-4h-zK9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZGr-Jb-YqB" kind="relationship" relationship="rootViewController" id="HVc-jh-KYP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p5n-nB-0J3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085.5072463768117" y="1449.7767857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BrazeIcon" width="150.5" height="150.5"/>
+        <image name="TabBar-CardIcon" width="25" height="25"/>
+        <image name="TabBar-ProfileIcon" width="25" height="25"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

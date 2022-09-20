@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CAA96B9D28D21B00003F9CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96B9C28D21B00003F9CC6 /* AppDelegate.swift */; };
 		CAA96B9F28D21B00003F9CC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96B9E28D21B00003F9CC6 /* SceneDelegate.swift */; };
-		CAA96BA128D21B00003F9CC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BA028D21B00003F9CC6 /* ViewController.swift */; };
 		CAA96BA428D21B00003F9CC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAA96BA228D21B00003F9CC6 /* Main.storyboard */; };
 		CAA96BA728D21B00003F9CC6 /* Hands_on_Learning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BA528D21B00003F9CC6 /* Hands_on_Learning.xcdatamodeld */; };
 		CAA96BA928D21B07003F9CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA96BA828D21B07003F9CC6 /* Assets.xcassets */; };
@@ -17,6 +16,10 @@
 		CAA96BB728D21B07003F9CC6 /* Hands_on_LearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BB628D21B07003F9CC6 /* Hands_on_LearningTests.swift */; };
 		CAA96BC128D21B07003F9CC6 /* Hands_on_LearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BC028D21B07003F9CC6 /* Hands_on_LearningUITests.swift */; };
 		CAA96BC328D21B07003F9CC6 /* Hands_on_LearningUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BC228D21B07003F9CC6 /* Hands_on_LearningUITestsLaunchTests.swift */; };
+		CAA96BD128D21EC5003F9CC6 /* Sailec-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CAA96BD028D21EC5003F9CC6 /* Sailec-Regular.otf */; };
+		CAA96BD328D21EDA003F9CC6 /* Sailec-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CAA96BD228D21EDA003F9CC6 /* Sailec-Bold.otf */; };
+		CAA96BD528D22C2F003F9CC6 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */; };
+		CAA96BD728D22C49003F9CC6 /* ContentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BD628D22C49003F9CC6 /* ContentCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,6 @@
 		CAA96B9928D21B00003F9CC6 /* Hands on Learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hands on Learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA96B9C28D21B00003F9CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAA96B9E28D21B00003F9CC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CAA96BA028D21B00003F9CC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAA96BA328D21B00003F9CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAA96BA628D21B00003F9CC6 /* Hands_on_Learning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hands_on_Learning.xcdatamodel; sourceTree = "<group>"; };
 		CAA96BA828D21B07003F9CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		CAA96BBC28D21B07003F9CC6 /* Hands on LearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hands on LearningUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA96BC028D21B07003F9CC6 /* Hands_on_LearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hands_on_LearningUITests.swift; sourceTree = "<group>"; };
 		CAA96BC228D21B07003F9CC6 /* Hands_on_LearningUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hands_on_LearningUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAA96BD028D21EC5003F9CC6 /* Sailec-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Regular.otf"; sourceTree = "<group>"; };
+		CAA96BD228D21EDA003F9CC6 /* Sailec-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Bold.otf"; sourceTree = "<group>"; };
+		CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		CAA96BD628D22C49003F9CC6 /* ContentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +109,13 @@
 			children = (
 				CAA96B9C28D21B00003F9CC6 /* AppDelegate.swift */,
 				CAA96B9E28D21B00003F9CC6 /* SceneDelegate.swift */,
-				CAA96BA028D21B00003F9CC6 /* ViewController.swift */,
+				CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */,
+				CAA96BD628D22C49003F9CC6 /* ContentCardViewController.swift */,
 				CAA96BA228D21B00003F9CC6 /* Main.storyboard */,
 				CAA96BA828D21B07003F9CC6 /* Assets.xcassets */,
 				CAA96BAA28D21B07003F9CC6 /* LaunchScreen.storyboard */,
 				CAA96BAD28D21B07003F9CC6 /* Info.plist */,
+				CAA96BCF28D21E9E003F9CC6 /* fonts */,
 				CAA96BA528D21B00003F9CC6 /* Hands_on_Learning.xcdatamodeld */,
 			);
 			path = "Hands on Learning";
@@ -128,6 +136,15 @@
 				CAA96BC228D21B07003F9CC6 /* Hands_on_LearningUITestsLaunchTests.swift */,
 			);
 			path = "Hands on LearningUITests";
+			sourceTree = "<group>";
+		};
+		CAA96BCF28D21E9E003F9CC6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CAA96BD228D21EDA003F9CC6 /* Sailec-Bold.otf */,
+				CAA96BD028D21EC5003F9CC6 /* Sailec-Regular.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA96BAC28D21B07003F9CC6 /* LaunchScreen.storyboard in Resources */,
+				CAA96BD328D21EDA003F9CC6 /* Sailec-Bold.otf in Resources */,
+				CAA96BD128D21EC5003F9CC6 /* Sailec-Regular.otf in Resources */,
 				CAA96BA928D21B07003F9CC6 /* Assets.xcassets in Resources */,
 				CAA96BA428D21B00003F9CC6 /* Main.storyboard in Resources */,
 			);
@@ -261,7 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA96BA128D21B00003F9CC6 /* ViewController.swift in Sources */,
+				CAA96BD528D22C2F003F9CC6 /* UserProfileViewController.swift in Sources */,
+				CAA96BD728D22C49003F9CC6 /* ContentCardViewController.swift in Sources */,
 				CAA96B9D28D21B00003F9CC6 /* AppDelegate.swift in Sources */,
 				CAA96B9F28D21B00003F9CC6 /* SceneDelegate.swift in Sources */,
 				CAA96BA728D21B00003F9CC6 /* Hands_on_Learning.xcdatamodeld in Sources */,
