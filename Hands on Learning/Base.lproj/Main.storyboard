@@ -17,22 +17,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Content Card View Controller-->
-        <scene sceneID="uil-EK-9lM">
-            <objects>
-                <viewController id="ZGr-Jb-YqB" customClass="ContentCardViewController" customModule="Hands_on_Learning" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kSE-EL-mGe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="T3T-q0-ay9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="sI0-i6-Fqv"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fMj-LL-85V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1995.6521739130437" y="1449.7767857142856"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="wxk-DK-VgO">
             <objects>
@@ -487,12 +471,41 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZGr-Jb-YqB" kind="relationship" relationship="rootViewController" id="HVc-jh-KYP"/>
+                        <segue destination="1DB-UO-HOP" kind="relationship" relationship="rootViewController" id="17h-LI-uFG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5n-nB-0J3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1085.5072463768117" y="1449.7767857142856"/>
+        </scene>
+        <!--Content Card Table View Controller-->
+        <scene sceneID="0tn-et-iek">
+            <objects>
+                <tableViewController id="1DB-UO-HOP" customClass="ContentCardTableViewController" customModule="Hands_on_Learning" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="inj-Q6-TAe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="veg-Zp-2cg">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="veg-Zp-2cg" id="Fq8-jH-MdK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1DB-UO-HOP" id="4og-ng-XVK"/>
+                            <outlet property="delegate" destination="1DB-UO-HOP" id="vEg-Eh-qQD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="b6o-7Y-BrC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTP-Dg-Ivf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2252" y="1450"/>
         </scene>
     </scenes>
     <resources>

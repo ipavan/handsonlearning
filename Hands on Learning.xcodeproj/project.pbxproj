@@ -19,7 +19,7 @@
 		CAA96BD128D21EC5003F9CC6 /* Sailec-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CAA96BD028D21EC5003F9CC6 /* Sailec-Regular.otf */; };
 		CAA96BD328D21EDA003F9CC6 /* Sailec-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CAA96BD228D21EDA003F9CC6 /* Sailec-Bold.otf */; };
 		CAA96BD528D22C2F003F9CC6 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */; };
-		CAA96BD728D22C49003F9CC6 /* ContentCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BD628D22C49003F9CC6 /* ContentCardViewController.swift */; };
+		CAA96BD928DA050B003F9CC6 /* ContentCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA96BD828DA050B003F9CC6 /* ContentCardTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		CAA96BD028D21EC5003F9CC6 /* Sailec-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Regular.otf"; sourceTree = "<group>"; };
 		CAA96BD228D21EDA003F9CC6 /* Sailec-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Bold.otf"; sourceTree = "<group>"; };
 		CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		CAA96BD628D22C49003F9CC6 /* ContentCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardViewController.swift; sourceTree = "<group>"; };
+		CAA96BD828DA050B003F9CC6 /* ContentCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 				CAA96B9C28D21B00003F9CC6 /* AppDelegate.swift */,
 				CAA96B9E28D21B00003F9CC6 /* SceneDelegate.swift */,
 				CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */,
-				CAA96BD628D22C49003F9CC6 /* ContentCardViewController.swift */,
+				CAA96BD828DA050B003F9CC6 /* ContentCardTableViewController.swift */,
 				CAA96BA228D21B00003F9CC6 /* Main.storyboard */,
 				CAA96BA828D21B07003F9CC6 /* Assets.xcassets */,
 				CAA96BAA28D21B07003F9CC6 /* LaunchScreen.storyboard */,
@@ -281,10 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA96BD528D22C2F003F9CC6 /* UserProfileViewController.swift in Sources */,
-				CAA96BD728D22C49003F9CC6 /* ContentCardViewController.swift in Sources */,
 				CAA96B9D28D21B00003F9CC6 /* AppDelegate.swift in Sources */,
 				CAA96B9F28D21B00003F9CC6 /* SceneDelegate.swift in Sources */,
 				CAA96BA728D21B00003F9CC6 /* Hands_on_Learning.xcdatamodeld in Sources */,
+				CAA96BD928DA050B003F9CC6 /* ContentCardTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
