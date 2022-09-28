@@ -91,7 +91,7 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func setNumericAttribute(_ sender: UIButton) {
-        let numberAttribute = numericAttribute
+        let numberAttribute = Double(numericAttribute)
         
         //************************************************
         // SET NUMERIC ATTRIBUTE HERE
@@ -114,7 +114,7 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func logPurchase(_ sender: UIButton) {
         let productName = productNameTextField.text ?? ""
-        let productPrice = productPriceTextField.text ?? ""
+        let productPrice = Double(productPriceTextField.text ?? "0.0") ?? 0.0
 
         //************************************************
         // SET YOUR PURCHASE EVENT HERE

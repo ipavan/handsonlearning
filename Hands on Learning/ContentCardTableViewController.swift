@@ -17,7 +17,8 @@ class ContentCardTableViewController: UITableViewController {
     }
     
     @objc func showContentCards() {
-        print("Show cards pressed")
+        //Insert Content Cards Code here
+        
     }
 
     // MARK: - Table view data source
