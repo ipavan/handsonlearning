@@ -91,10 +91,9 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func setNumericAttribute(_ sender: UIButton) {
-        let numberAttribute = Double(numericAttribute)
-        
         //************************************************
         // SET NUMERIC ATTRIBUTE HERE
+        // User the variable numericAttribute
         
         
         
