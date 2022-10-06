@@ -35,6 +35,16 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate {
         eventTextField.delegate = self
         productNameTextField.delegate = self
         productPriceTextField.delegate = self
+        
+        setUserIDLabel()
+    }
+    
+    func setUserIDLabel() {
+        if let userID = UserDefaults.standard.value(forKey: "braze_userID") as? String {
+            if userID != "" {
+                userIDLabel.text = "Looks like your UserID is \(userID)"
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,6 +67,8 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate {
         
         
         //************************************************
+        UserDefaults.standard.set(userID, forKey: "braze_userID")
+        setUserIDLabel()
     }
     
     @IBAction func setColorAttribute(_ sender: UIButton) {
