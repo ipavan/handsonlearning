@@ -26,12 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Push Notifications
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // DELETE THE /* and */
         /*
         AppDelegate.braze?.notifications.register(deviceToken: deviceToken)
         */
     }
 
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        // DELETE THE /* and */
         /*
             if let braze = AppDelegate.braze, braze.notifications.handleBackgroundNotification(userInfo: userInfo,fetchCompletionHandler: completionHandler) {
                     return
@@ -103,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        // DELETE THE /* and */ 
         /*if let braze = AppDelegate.braze, braze.notifications.handleUserNotification(response: response, withCompletionHandler: completionHandler) {
             return
         }*/
