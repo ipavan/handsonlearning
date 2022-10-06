@@ -43,6 +43,7 @@ class UserProfileViewController: UIViewController, UITextFieldDelegate {
         if let userID = UserDefaults.standard.value(forKey: "braze_userID") as? String {
             if userID != "" {
                 userIDLabel.text = "Looks like your UserID is \(userID)"
+                userIDTextField.text = userID
             }
         }
     }
