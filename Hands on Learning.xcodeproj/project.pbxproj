@@ -57,6 +57,7 @@
 		CAA96BD228D21EDA003F9CC6 /* Sailec-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Bold.otf"; sourceTree = "<group>"; };
 		CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		CAA96BD828DA050B003F9CC6 /* ContentCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCardTableViewController.swift; sourceTree = "<group>"; };
+		CAD1E7F328EF516D00FAE0D9 /* Hands on Learning.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hands on Learning.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +108,7 @@
 		CAA96B9B28D21B00003F9CC6 /* Hands on Learning */ = {
 			isa = PBXGroup;
 			children = (
+				CAD1E7F328EF516D00FAE0D9 /* Hands on Learning.entitlements */,
 				CAA96B9C28D21B00003F9CC6 /* AppDelegate.swift */,
 				CAA96B9E28D21B00003F9CC6 /* SceneDelegate.swift */,
 				CAA96BD428D22C2F003F9CC6 /* UserProfileViewController.swift */,
@@ -459,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hands on Learning/Hands on Learning.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -486,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hands on Learning/Hands on Learning.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

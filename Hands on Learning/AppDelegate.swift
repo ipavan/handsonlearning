@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import UserNotifications
 import CoreData
 
 @main
@@ -20,6 +21,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         return true
+    }
+    
+    // MARK: Push Notifications
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        /*
+        AppDelegate.braze?.notifications.register(deviceToken: deviceToken)
+        */
+    }
+
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        /*
+            if let braze = AppDelegate.braze, braze.notifications.handleBackgroundNotification(userInfo: userInfo,fetchCompletionHandler: completionHandler) {
+                    return
+            }
+            completionHandler(.noData)
+        */
     }
 
     // MARK: UISceneSession Lifecycle
@@ -84,6 +102,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
-    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        /*if let braze = AppDelegate.braze, braze.notifications.handleUserNotification(response: response, withCompletionHandler: completionHandler) {
+            return
+        }*/
+        completionHandler()
+    }
+
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        if #available(iOS 14.0, *) {
+            completionHandler([.list, .banner])
+        } else {
+            completionHandler(.alert)
+        }
+    }
 }
 
